@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8A7E8"/>
+      <stop offset="100%" stop-color="#6D3FA9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="#0B0710"/>
+
+  <circle
+    cx="256"
+    cy="256"
+    r="174"
+    fill="none"
+    stroke="url(#purple)"
+    stroke-width="10"
+    opacity="0.9"
+  />
+
+  <circle
+    cx="256"
+    cy="256"
+    r="150"
+    fill="#140D20"
+    stroke="#C8A7E8"
+    stroke-opacity="0.18"
+    stroke-width="2"
+  />
+
+  <text
+    x="256"
+    y="306"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="190"
+    font-weight="600"
+    fill="#F8F6F3"
+  >B</text>
+
+  <circle cx="386" cy="126" r="9" fill="#C8A7E8"/>
+  <circle cx="410" cy="150" r="5" fill="#6D3FA9"/>
+</svg>
