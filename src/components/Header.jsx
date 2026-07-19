@@ -12,10 +12,10 @@ const Header = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
+    { name: "About Us", path: "/about" },
+    // { name: "Services", path: "/services" },
     { name: "Gallery", path: "/gallery" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   // Mobile menu staggering configurations

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Floater from "./components/Floater";
 
 import Banner from "./components/Banner";
 import Services from "./components/Services";
@@ -30,7 +31,6 @@ const App = () => {
               <Banner />
               <Services />
               <Whyus />
-              <Gallery />
               <Testimonials />
             </>
           }
@@ -39,11 +39,15 @@ const App = () => {
         <Route path="/about" element={<About />} />
 
         <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery/>} />
 
         <Route path="/book" element={<Book />} />
       </Routes>
 
       <Footer />
+
+      {/* BITNA Support Chat Widget */}
+      <Floater />
     </Router>
   );
 };
