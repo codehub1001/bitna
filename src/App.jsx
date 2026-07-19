@@ -1,0 +1,49 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import Services from "./components/Services";
+import Whyus from "./components/Whyus";
+import Gallery from "./components/Gallery";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
+
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Book from "./pages/Book";
+
+const App = () => {
+  return (
+    <div className="min-h-screen bg-[#0B0710] text-white">
+      <Router>
+        <Header />
+
+        <Routes>
+          {/* Home Page */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Banner />
+                <Services />
+                <Whyus />
+                <Gallery />
+                <Testimonials />
+              </>
+            }
+          />
+
+          {/* Other Pages */}
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/book" element={<Book />} />
+        </Routes>
+
+        <Footer />
+      </Router>
+    </div>
+  );
+};
+
+export default App;
